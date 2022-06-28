@@ -1,0 +1,14 @@
+version: "3"
+services:
+  nextjs:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    stdin_open: "true"
+    tty: "true"  
+    # depends_on: 
+    #   - express
+    # env_file:
+    #   - ./front/.env
